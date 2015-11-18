@@ -1,34 +1,6 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
-
-
-
-// Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -38,16 +10,115 @@ $on-laptop:        800px;
 //     }
 // }
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+  @media screen and (max-width: $device) {
+    @content;
+  }
 }
 
-
-
-// Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout",
-        "syntax-highlighting"
+  "grid/susy",
+  "variables",
+  "base",
+  "layout"
 ;
+
+.color-palette {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  > li:first-child {
+
+    &::before,
+    &::after {
+      color: white;
+      position: absolute;
+      top: 0;
+      z-index: 2;
+    }
+
+    &::before {
+      content: '10% lighter';
+      left: 0;
+    }
+
+    &::after {
+      content: '10% darker';
+      right: 0;
+    }
+  }
+}
+
+.color-swatch {
+  color: white;
+  height: 100px;
+  padding: 5%;
+  position: relative;
+  text-align: center;
+}
+
+@mixin swatch($color) {
+  background-color: $color;
+  background: linear-gradient(to right, lighten($color, 10), darken($color, 10));
+}
+
+.color-1 {
+  @include swatch($color-1);
+}
+
+.color-2 {
+  @include swatch($color-2);
+}
+
+.color-3 {
+  @include swatch($color-3);
+}
+
+.color-4 {
+  @include swatch($color-4);
+}
+
+.color-5 {
+  @include swatch($color-5);
+}
+
+.color-6 {
+  @include swatch($color-6);
+}
+
+.accent-1 {
+  @include swatch($accent-1);
+}
+
+.accent-2 {
+  @include swatch($accent-2);
+}
+
+.accent-3 {
+  @include swatch($accent-3);
+}
+
+.accent-4 {
+  @include swatch($accent-4);
+}
+
+.accent-5 {
+  @include swatch($accent-5);
+}
+
+.accent-6 {
+  @include swatch($accent-6);
+}
+
+.accent-7 {
+  @include swatch($accent-7);
+}
+
+.accent-8 {
+  @include swatch($accent-8);
+}
+
+.accent-9 {
+  @include swatch($accent-9);
+}

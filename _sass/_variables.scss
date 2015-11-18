@@ -1,0 +1,50 @@
+// Our variables
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Colors
+$color-1: #264F73;
+$color-2: #27307F;
+$color-3: #101C7F;
+$color-4: #0C1232;
+$color-5: #120F26;
+$color-6: #171B27;
+$color-7: #444067;
+
+$accent-1: #CE4D45;
+$accent-2: #CC3934;
+$accent-3: #CE2F24;
+$accent-4: #D9042B;
+$accent-5: #B20600;
+$accent-6: #6B0C22;
+$accent-7: #FF530D;
+$accent-8: #FF5335;
+$accent-9: #588C8C;
+
+// Breakpoints
+$break-xs: 400px;
+$break-sm: 700px;
+$break-md: 960px;
+$break-lg: 1200px;
+
+// Susy variables
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  global-box-sizing: border-box
+);
