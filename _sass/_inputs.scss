@@ -1,0 +1,40 @@
+.contact-form {
+  margin: auto;
+  max-width: $break-sm;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  border: 3px solid $input-border;
+  border-radius: 5px;
+  color: $input-color;
+  display: block;
+  font-size: 110%;
+  margin: 0 0 7px 0;
+  padding: 7px;
+  width: 100%;
+  transition: all .5s;
+
+  &:focus {
+    box-shadow: 3px 3px 5px lighten($text-color, 10);
+    outline: none;
+  }
+}
+
+input[type=submit] {
+  background: $input-border;
+  border: 3px solid $input-border;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 110%;
+  padding: 7px 10px;
+  width: 100%;
+  transition: all .5s;
+
+  &:hover {
+    background: lighten($input-border, 10);
+    border: 3px solid lighten($input-border, 5);
+  }
+}

@@ -16,23 +16,19 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Colors
-$color-1: #264F73;
-$color-2: #27307F;
-$color-3: #101C7F;
-$color-4: #0C1232;
-$color-5: #120F26;
-$color-6: #171B27;
-$color-7: #444067;
+$lavender: #D9C1E2;
+$purple: #670167;
+$green: #105B49;
+$turquoise: #C8E2D4;
 
-$accent-1: #CE4D45;
-$accent-2: #CC3934;
-$accent-3: #CE2F24;
-$accent-4: #D9042B;
-$accent-5: #B20600;
-$accent-6: #6B0C22;
-$accent-7: #FF530D;
-$accent-8: #FF5335;
-$accent-9: #588C8C;
+// Navigation
+$nav-color: $green;
+$nav-link-color: white;
+$nav-height: 50px;
+
+// Form
+$input-border: $green;
+$input-color: $input-border;
 
 // Breakpoints
 $break-xs: 400px;

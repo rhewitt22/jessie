@@ -1,0 +1,28 @@
+header {
+  background: $nav-color;
+  left: 0;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+
+.nav-links {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  a {
+    color: $nav-link-color;
+  }
+}

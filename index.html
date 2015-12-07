@@ -2,34 +2,41 @@
 layout: default
 ---
 
-<div class="layout">
-  <h1>Color Swatches</h1>
-  <p><a href="https://color.adobe.com">Choose your own color palette</a></p>
+<div class="wrapper" role-"main">
 
-  <h2>Navy/Blue</h2>
+  <section class="page" id="home">
+    <h1>Jessie Hewitt and Andrew Sims</h1>
+    <span>September 16, 2016</span>
+  </section>
+
+  <section class="page" id="accommodations">
+    <h2>Accommodations</h2>
+  </section>
+
+  <section class="page" id="events">
+    <h2>Events</h2>
+  </section>
+
+  <section class="page" id="registry">
+    <h2>Registry</h2>
+  </section>
+
+  <section class="page" id="contact">
+
+    <div class="contact-form">
+      <h2>Contact Us:</h2>
+      <form action="//formspree.io/your@email.com" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name">
+        <label for="_replyto">Email:</label>
+        <input type="email" name="_replyto">
+        <label for="message">Message:</label>
+        <textarea name="message" cols="30" rows="10"></textarea>
+        <input type="text" name="_gotcha" style="display:none" />
+        <input type="submit" value="Send">
+      </form>
+    </div>
+
+  </section>
 </div>
-
-<ul class="color-palette">
-  <li class="color-swatch color-1">Color 1: #</li>
-  <li class="color-swatch color-2">Color 2: #</li>
-  <li class="color-swatch color-3">Color 3: #</li>
-  <li class="color-swatch color-4">Color 4: #</li>
-  <li class="color-swatch color-5">Color 5: #</li>
-  <li class="color-swatch color-6">Color 6: #</li>
-</ul>
-
-<h2 class="layout">Accent Colors</h2>
-
-<ul class="color-palette">
-  <li class="color-swatch accent-1">Color 1: #</li>
-  <li class="color-swatch accent-2">Color 2: #</li>
-  <li class="color-swatch accent-3">Color 3: #</li>
-  <li class="color-swatch accent-4">Color 4: #</li>
-  <li class="color-swatch accent-5">Color 5: #</li>
-  <li class="color-swatch accent-6">Color 6: #</li>
-  <li class="color-swatch accent-7">Color 7: #</li>
-  <li class="color-swatch accent-8">Color 8: #</li>
-  <li class="color-swatch accent-9">Color 9: #</li>
-</ul>
-
 
