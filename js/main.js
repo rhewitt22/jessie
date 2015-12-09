@@ -1,4 +1,6 @@
 (function () {
+  var $maps = $('.maps'),
+      $iframe = $('.maps iframe');
 
   $('a[href^="#"]').on('click',function (e) {
       e.preventDefault();
@@ -11,6 +13,14 @@
       }, 900, 'swing', function () {
           window.location.hash = target;
       });
+  });
+
+  $maps.click(function () {
+    $iframe.css("pointer-events", "auto");
+  });
+
+  $maps.mouseleave(function() {
+    $iframe.css("pointer-events", "none");
   });
 
 })();
