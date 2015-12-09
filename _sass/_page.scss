@@ -1,4 +1,10 @@
 .page {
-  height: 100vh;
+  vm: 100vh;
+  vmin: 100vh;
+  min-height: 100vh;
   padding: 100px 3% 0 3%;
+}
+
+#home {
+  text-align: center;
 }

@@ -1,5 +1,5 @@
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: "Source Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
@@ -16,10 +16,10 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Colors
-$lavender: #D9C1E2;
-$purple: #670167;
-$green: #105B49;
-$turquoise: #C8E2D4;
+$lavender: #d6c1e1;
+$purple: #660066;
+$green: #105B4B;
+$turquoise: #8ac2a8;
 
 // Navigation
 $nav-color: $green;
