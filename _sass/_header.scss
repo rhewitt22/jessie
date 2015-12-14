@@ -12,23 +12,39 @@ header {
   padding: 0;
   text-align: center;
 
-  li {
-    border-radius: 5px;
-    display: inline-block;
-    margin-right: 10px;
-
-    &:hover {
-      background: darken($green, 5);
-    }
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
   a {
     color: $nav-link-color;
     display: block;
     padding: 7px;
+  }
+}
+
+.nav-link {
+  border-radius: 5px;
+  display: inline-block;
+  margin-right: 10px;
+
+  &:hover {
+    background: darken($green, 5);
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.show-sm {
+  display: inline-block;
+
+  @media (min-width: $break-md) {
+    display: none;
+  }
+}
+
+.show-md {
+  display: none;
+
+  @media (min-width: $break-md) {
+    display: inline-block;
   }
 }
