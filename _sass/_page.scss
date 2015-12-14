@@ -24,3 +24,15 @@
   color: $purple;
   font-family: $heading-font-family;
 }
+
+.scroll-help-container {
+  bottom: 25px;
+  position: absolute;
+  left: 50%;
+  z-index: -1;
+}
+
+.scroll-help {
+  position: relative;
+  left: -50%;
+}
