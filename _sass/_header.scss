@@ -7,15 +7,20 @@ header {
   top: 0;
 }
 
-
 .nav-links {
   margin: 0;
   padding: 0;
   text-align: center;
 
   li {
+    border-radius: 5px;
     display: inline-block;
     margin-right: 10px;
+    padding: 7px;
+
+    &:hover {
+      background: darken($green, 5);
+    }
 
     &:last-child {
       margin-right: 0;

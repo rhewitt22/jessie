@@ -8,3 +8,19 @@
 #home {
   text-align: center;
 }
+
+.heading {
+  background: $purple;
+  color: white;
+  text-align: right;
+  padding-right: 25%;
+}
+
+.thanks {
+  text-align: center;
+}
+
+.signature {
+  color: $purple;
+  font-family: $heading-font-family;
+}

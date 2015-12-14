@@ -5,12 +5,12 @@ layout: default
 <div class="wrapper" role-"main">
 
   <section class="page" id="home">
-    <h1>Jessie Hewitt and Andrew Sims</h1>
+    <h1>Jessie Hewitt and Andrew Sims <br> Are Getting Married</h1>
     <span>September 16, 2016</span>
   </section>
 
   <section class="page" id="accommodations">
-    <h2>Accommodations</h2>
+    <h2 class="heading">Accommodations</h2>
 
     <p>We have blocked rooms out at these two hotels, it is also the weekend of a Navy Home Game so we want people to be aware they should book early.</p>
 
@@ -30,7 +30,7 @@ layout: default
   </section>
 
   <section class="page" id="party">
-    <h2>Wedding Party</h2>
+    <h2 class="heading">Wedding Party</h2>
 
     <h3>Groomsmen</h3>
 
@@ -91,11 +91,10 @@ layout: default
     </ul>
   </section>
 
-  <section class="page" id="events">
-    <h2>Events</h2>
+  <section class="page" id="londontown">
+    <h2 class="heading">Historic London Town and Gardens</h2>
 
-    <h3>Londontown Gardens</h3>
-    <h4>Edgewater, Maryland</h4>
+    <h3>Edgewater, Maryland</h3>
 
     <p>Both the ceremony and reception will be held in one place!</p>
 
@@ -105,11 +104,11 @@ layout: default
   </section>
 
   <section class="page" id="registry">
-    <h2>Registry</h2>
+    <h2 class="heading">Registry</h2>
   </section>
 
   <section class="page" id="contact">
-    <h2>Contact Us:</h2>
+    <h2 class="heading">Talk to us</h2>
 
     <div class="contact-form">
       <form action="//formspree.io/gettinghitched91616@gmail.com" method="POST">
@@ -120,6 +119,7 @@ layout: default
         <label for="message">Message:</label>
         <textarea name="message" cols="30" rows="10"></textarea>
         <input type="text" name="_gotcha" style="display:none" />
+        <input type="hidden" name="_next" value="{{ Site.url }}/thanks" />
         <input type="submit" value="Send">
       </form>
     </div>

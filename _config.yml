@@ -1,7 +1,7 @@
 # Site settings
 title: Jessie and Andrew are Getting Married!
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com"
+url: "http://rhewitt22.github.io/jessie"
 
 # Build settings
 markdown: kramdown
