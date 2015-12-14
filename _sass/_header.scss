@@ -16,7 +16,6 @@ header {
     border-radius: 5px;
     display: inline-block;
     margin-right: 10px;
-    padding: 7px;
 
     &:hover {
       background: darken($green, 5);
@@ -29,5 +28,7 @@ header {
 
   a {
     color: $nav-link-color;
+    display: block;
+    padding: 7px;
   }
 }
