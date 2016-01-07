@@ -1,0 +1,19 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-right {
+  img {
+    display: block;
+    margin: auto;
+  }
+  @media (min-width: $break-sm) {
+    float: right;
+    margin-left: 1em;
+  }
+}
+
+figcaption {
+  text-align: center;
+}
