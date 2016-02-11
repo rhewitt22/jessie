@@ -33,7 +33,6 @@ header {
 
   .nav-link {
     border-radius: 5px;
-    margin-right: 10px;
 
     &:hover {
       background: darken($green, 5);
@@ -53,10 +52,11 @@ header {
   a {
     color: $nav-link-color;
     display: block;
+    padding: .5em;
   }
 
   @media (min-width: $break-sm) {
-    margin: 0;
+    margin: 0 1em 0 0;
     max-height: 1000px;
     opacity: 1;
     padding: 0;
