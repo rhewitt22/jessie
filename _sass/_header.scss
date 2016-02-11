@@ -107,3 +107,17 @@ header {
     display: block;
   }
 }
+
+.header-couple {
+
+  &::after {
+    color: white;
+    content: 'Jessie  \2665  Andrew';
+    font-family: $heading-font-family;
+    font-size: 1em;
+  }
+
+  @media (min-width: $break-sm) {
+    display: none;
+  }
+}
