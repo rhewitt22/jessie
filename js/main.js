@@ -1,6 +1,9 @@
 (function () {
   var $maps = $('.maps'),
-      $iframe = $('.maps iframe');
+      $iframe = $('.maps iframe'),
+      $toggle = $('.menu-toggle'),
+      $nav = $('.nav-links'),
+      $navLink = $('.nav-link');
 
   $('a[href^="#"]').on('click',function (e) {
       e.preventDefault();
@@ -21,6 +24,15 @@
 
   $maps.mouseleave(function() {
     $iframe.css("pointer-events", "none");
+  });
+
+  $toggle.on('click', function () {
+    $nav.toggleClass('active');
+  });
+
+  $navLink.on('click', function () {
+    if ( $nav.hasClass('active') )
+      $nav.removeClass('active');
   });
 
 })();

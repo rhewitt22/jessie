@@ -1,40 +1,85 @@
 header {
   background: $nav-color;
   left: 0;
+  min-height: 50px;
   padding: 10px;
   position: fixed;
   width: 100%;
   top: 0;
 }
 
+.menu-toggle {
+  background: $purple;
+  border: 3px solid darken($purple, 10);
+  color: white;
+  font-size: .9em;
+  padding: 5px 7px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  z-index: 10;
+
+  @media (min-width: $break-sm) {
+    display: none;
+  }
+}
+
 .nav-links {
   margin: 0;
-  padding: 0;
-  text-align: center;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all .3s;
+
+  .nav-link {
+    border-radius: 5px;
+    margin-right: 10px;
+
+    &:hover {
+      background: darken($green, 5);
+    }
+  }
+
+  &.active {
+    max-height: 1000px;
+    opacity: 1;
+
+    .nav-link {
+      display: block;
+      text-align: center;
+    }
+  }
 
   a {
     color: $nav-link-color;
     display: block;
-    padding: 7px;
+  }
+
+  @media (min-width: $break-sm) {
+    margin: 0;
+    max-height: 1000px;
+    opacity: 1;
+    padding: 0;
+    text-align: center;
+
+    a {
+      display: block;
+      padding: 7px;
+    }
+
+    .nav-link {
+      display: inline-block;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 }
 
-.nav-link {
-  border-radius: 5px;
-  display: inline-block;
-  margin-right: 10px;
 
-  &:hover {
-    background: darken($green, 5);
-  }
-
-  &:last-child {
-    margin-right: 0;
-  }
-}
 
 .show-sm {
-  display: inline-block;
 
   @media (min-width: $break-md) {
     display: none;
@@ -52,5 +97,13 @@ header {
 #home {
   span {
     font-size: 1.5em;
+  }
+}
+
+.scroll-help-container {
+  display: none;
+
+  @media (min-width: $break-md) {
+    display: block;
   }
 }
